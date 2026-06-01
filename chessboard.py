@@ -323,7 +323,7 @@ class chessboard:
             self.draw(False)
         elif 0 < event.y < 21:
             if 0 < event.x < 21:
-                with open('memory.txt','w',encoding = 'utf-16') as f:
+                with open('battle_image.txt','w',encoding = 'utf-16') as f:
                     f.write(self.draw(True))
                     print(chars.saved)
         else:
@@ -687,7 +687,7 @@ class chessboard:
 
     def summon_newchessboard(self):
         self.vector = [[pieces(name = functions.void_set.VOID,pos = (x,y)) \
-                        for x in range(self.chessboard_width)]\
+                        for x in range(self.chessboard_width)] \
                         for y in range(self.chessboard_lenth)]
         self.vector[0][4] = pieces(self.admirals[0],62    ,\
                 self.placement_admiral_alpha,(4,0),1)

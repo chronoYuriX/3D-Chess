@@ -1,0 +1,33 @@
+##battleloader.py
+
+import chars
+
+def savebattle(chessboard):
+	with open('last_battle.txt','w',encoding = 'utf-16') as f:
+        f.write(chessboard.draw(True))
+
+def loadbattle(chessboard):
+	chessboard.vector = [[pieces(name = functions.void_set.VOID,pos = (x,y)) \
+                          for x in range(self.chessboard_width)] \
+                          for y in range(self.chessboard_lenth)]
+	with open('last_battle.txt','r') as f:
+		line = f.readline()
+		y = 0
+		while line:
+			x = 0
+			for char in line[::2]:
+				if char == chars.pawn_alpha:
+					chessboard.vector[y][x] = pieces(chars.pawn_alpha,1,\
+                		chessboard.placement_pawn_alpha,(x,y),1)
+				elif char == chars.pawn_beta:
+					chessboard.vector[y][x] = pieces(chars.pawn_beta,1,\
+                		chessboard.placement_pawn_alpha,(x,y),2)
+				elif char == chars.cannon_alpha:
+					chessboard.vector[y][x] = pieces(chars.cannon_alpha,7,\
+                		chessboard.placement_cannon,(x,y),1)
+                elif char == chars.cannon_beta:
+					chessboard.vector[y][x] = pieces(chars.cannon_beta,7,\
+                		chessboard.placement_cannon,(x,y),2)
+				x += 1
+			y += 1
+			line = f.readline()

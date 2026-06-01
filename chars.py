@@ -51,3 +51,7 @@ cannot_select = '无法选中！'
 selected = '已选中：'
 saved = '残局已保存！'
 helping = '点击窗口左下角控制视角左右移动，右下角控制视角俯仰，左上角保存残局。'
+player_pieces_alpha = pawn_alpha + cannon_alpha + chariot_alpha + \
+	steed_alpha + vizier_alpha + chevalier_alpha + admirals[0]
+player_pieces_beta  = pawn_beta  + cannon_beta  + chariot_beta  + \
+	steed_beta  + vizier_beta  + chevalier_beta  + admirals[1]

@@ -1,4 +1,4 @@
-##CHCMR5.py
+##CHCMR7.py
 '''
 CHCMR v7.0.1.
     --Bugs in your whiskers!
