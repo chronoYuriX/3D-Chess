@@ -28,6 +28,8 @@ def loadbattle(chessboard):
                 elif char == chars.cannon_beta:
 					chessboard.vector[y][x] = pieces(chars.cannon_beta,7,\
                 		chessboard.placement_cannon,(x,y),2)
+
 				x += 1
 			y += 1
+			f.readline()
 			line = f.readline()
