@@ -1,3 +1,4 @@
 1. Add a recovery mode
 2. Auto save
 3. History battles system
+4. Regret mode
