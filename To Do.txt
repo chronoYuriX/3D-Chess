@@ -2,3 +2,4 @@
 2. Auto save
 3. History battles system
 4. Regret mode
+5. Put setup files into /data and redirect the file referance in the scripts
